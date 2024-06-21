@@ -131,10 +131,6 @@ font-size: 40px;
   margin-right: 10px; 
 }
 
-
-
-
-
 .right {
     display: flex;
     gap: 100px; 
@@ -157,6 +153,15 @@ font-size: 40px;
 .sub-kategori a{
     color: var(--black);
     font-size: 25px;
+}
+
+.bottom{
+    background-color: var(--primary);
+    padding-block: 20px;
+}
+.bottom p{
+    color: var(--light);
+    text-align: center;
 }
 
 @media screen and (max-width: 768px){
