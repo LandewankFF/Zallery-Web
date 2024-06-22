@@ -2,9 +2,32 @@
   .wrap-portofolio .image-porto{
     justify-content: center;
   }
+  /* .hero-right{
+    width: auto;
+    height: auto;
+  }
+  .hero-right img{
+    width: 100%;
+    height: auto;
+  } */
 }
 @media screen and (max-width: 768px) {
   /* hero */
+  .wrap-hero{
+    flex-direction: column;
+    gap: 30px;
+  }
+  .wrap-hero .hero-left{
+    align-items: center;
+  }
+   .hero-right{
+    width: 300px;
+    height: auto;
+  }
+  .hero-right img{
+    width: 100%;
+    height: auto;
+  }
   .container {
     padding-inline: 50px;
   }
@@ -26,6 +49,12 @@
 @media screen and (max-width: 425px) {
   .container {
     padding-inline: 30px;
+  }
+  .wrap-hero .hero-left .skill{
+    font-size: 20px;
+  }
+  .wrap-hero .hero-left h3{
+    text-align: center;
   }
   .right {
     flex-direction: column;
@@ -72,4 +101,17 @@
     font-size: 15px;
   }
 
+}
+
+@media screen and (max-width: 375px) {
+  .wrap-hero .hero-left h3{
+    text-align: center;
+    font-size: 30px;
+  }
+  .wrap-hero .hero-left .skill{
+    font-size: 16px;
+  }
+  .hero-left span{
+    font-size: 20px;
+  }
 }

@@ -170,11 +170,18 @@ nav {
   color: var(--light);
   width: fit-content;
 }
-
+.hero-right{
+  width: 300px;
+  height: 300px;
+}
+.hero-right img{
+  width: 100%;
+  height: auto;
+}
 /* end styling hero */
 
 /* about me */
-#hero, #about-me, #portofolio, #skills{
+#about-me, #portofolio, #skills{
   margin-block: 50px;
 }
 .wrap-about{
