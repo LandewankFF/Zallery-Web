@@ -9,6 +9,8 @@
 }
 html {
   scroll-behavior: smooth;
+}
+body{
   overflow-x: hidden;
 }
 :root {
@@ -22,6 +24,7 @@ html {
   max-width: 1440px;
   margin-inline: auto;
   padding-inline: 95px;
+  overflow-x: hidden;
 }
 
 ul,
