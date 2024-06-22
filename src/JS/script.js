@@ -1,3 +1,4 @@
+
 // Create resnposive menu
 const menuOpen = document.querySelector(".menu-open");
 const menuClose = document.querySelector(".close-menu");

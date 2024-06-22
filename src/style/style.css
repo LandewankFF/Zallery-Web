@@ -1,10 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Autour+One&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Autour+One&family=Average+Sans&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
-
+@import url('https://fonts.googleapis.com/css2?family=Road+Rage&display=swap');
 * {
   box-sizing: border-box;
   margin: 0;
+}
+html {
+  scroll-behavior: smooth;
 }
 :root {
   --primary: #7a231d;
@@ -75,6 +78,9 @@ nav {
   .menu-open {
     display: block;
   }
+  .nav-menu a{
+    color: var(--black);
+  }
   .nav-menu {
     position: fixed;
     z-index: 10;
@@ -84,7 +90,7 @@ nav {
     height: 50%;
     padding-inline: 20px;
     text-align: center;
-    background: #14181f;
+    background: var(--secondary);
     flex-direction: column;
     transition: left 0.5s ease;
     gap: 30px;
@@ -92,6 +98,7 @@ nav {
     align-items: center;
     gap: 20px;
   }
+
   .nav-menu.active {
     left: 0px;
   }
@@ -100,7 +107,7 @@ nav {
   }
   .close-menu.show {
     display: block;
-    color: #ffffff;
+    color: var(--secondary);
     font-size: 20px;
   }
 }
@@ -108,25 +115,27 @@ nav {
 
 /* Hero */
 #hero {
-  position: relative;
-  overflow: hidden;
+  background: url(/src/images/Vector.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  
 }
 
-#hero::before {
+/* #hero::before {
   content: "";
   position: absolute;
-  /* top: 0; */
-  /* left: 0; */
-  /* bottom: 0; */
+  top: 0;
+  left: 0;
+  bottom: 0;
   width: 100%;
   height: 100%;
   background: url(/src/images/Vector.png);
   background-size: contain;
-  /* background-size: cover; */
-  /* object-fit: contain; */
+  background-size: cover;
+  object-fit: contain;
   background-repeat: no-repeat;
   z-index: -1;
-}
+} */
 
 .wrap-hero {
   display: flex;
@@ -165,8 +174,8 @@ nav {
 /* end styling hero */
 
 /* about me */
-#about-me{
-    margin-block: 50px;
+#hero, #about-me, #portofolio, #skills{
+  margin-block: 50px;
 }
 .wrap-about{
     display: flex;
@@ -211,7 +220,7 @@ nav {
 }
 .wrap-portofolio h3{
   font-family: "Roboto", sans-serif;
-  font-size: 60px;
+  font-size: 50px;
   text-align: center;
   color: #7A231D;
 }
@@ -246,6 +255,95 @@ nav {
 
 /* end style portofolio */
 
+/* Software Skills */
+.wrap-skills h3{
+  font-size: 50px;
+  color: var(--black);
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+
+}
+.wrap-skills .col-logo{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
+  margin-top: 50px;
+}
+.wrap-skills 
+.software{
+  font-family: "Roboto", sans-serif;
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.software .logo-skills{
+  width: 140px;
+  height: auto;
+}
+.software .col-skill{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.software .col-skill span{
+  display: block;
+}
+.software .col-skill .title-skill{
+  font-style: italic;
+  font-size: 25px;
+}
+.software .col-skill .persen-skill{
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* end style software  */
+/* Style Contact */
+#contact {
+  background: url(/src/images/contact.png) no-repeat center top;
+  background-size: cover;
+  padding-top: 100px;
+  padding-bottom: 20px;
+  margin-top: 50px; /* Adds more space above the section */
+  
+}
+.wrapp-contact .content-top{
+  font-family: "Road Rage", sans-serif;
+  font-size: 80px;
+  color: var(--primary);
+  text-align: center;
+}
+.wrapp-contact .content-top h4{
+  color: var(--black);
+  font-family: "Autour One", system-ui;
+  font-size: 40px;
+}
+.wrapp-contact .content-bottom .row{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  font-size: 20px;
+}
+.wrapp-contact .content-bottom .row .call{
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  align-items: center;
+  gap: 20px;
+  margin-top: 30px;
+}
+.wrapp-contact .content-bottom .row .call a i{
+  font-size: 50px;
+  text-align: center;
+  color: var(--light);
+}
+
+
 /* Footer style */
 footer {
   background-color: var(--abu);
@@ -263,6 +361,7 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  gap: 10px;
 }
 
 .left .sosmed a {

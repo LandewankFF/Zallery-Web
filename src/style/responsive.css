@@ -1,3 +1,8 @@
+@media screen and (max-width: 1024px){
+  .wrap-portofolio .image-porto{
+    justify-content: center;
+  }
+}
 @media screen and (max-width: 768px) {
   /* hero */
   .container {
@@ -8,6 +13,15 @@
     align-items: center;
     gap: 50px;
   }
+  .wrapp-contact .content-top{
+    font-size: 70px;
+  }
+  .wrapp-contact .content-top h4{
+    font-size: 30px;
+  }
+
+  /* Footer */
+
 }
 @media screen and (max-width: 425px) {
   .container {
@@ -45,6 +59,17 @@
   }
   .wrap-portofolio .image-porto{
     justify-content: center;
+  }
+
+  .wrapp-contact .content-bottom .row{
+    justify-content: center;
+  }
+
+  .wrapp-contact .content-top{
+    font-size: 50px;
+  }
+  .wrapp-contact .content-top h4{
+    font-size: 15px;
   }
 
 }
