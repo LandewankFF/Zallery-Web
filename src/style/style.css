@@ -9,6 +9,7 @@
 }
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 :root {
   --primary: #7a231d;
