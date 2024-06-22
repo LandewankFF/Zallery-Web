@@ -32,14 +32,16 @@ a {
   text-decoration: none;
 }
 /* style navbar */
-nav {
-  background-color: var(--primary);
-}
-.nav {
+.navbar{
   position: sticky;
   top: 0;
   z-index: 10;
   padding-block: 18px;
+}
+nav {
+  background-color: var(--primary);
+}
+.nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -115,27 +117,14 @@ nav {
 
 /* Hero */
 #hero {
-  background: url(/src/images/Vector.png);
+  /* background: url(/src/images/Vector.png);
   background-repeat: no-repeat;
+  background-size: cover; */
+  background: url(/src/images/Vector.png) no-repeat center top;
   background-size: cover;
   
 }
 
-/* #hero::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: 100%;
-  background: url(/src/images/Vector.png);
-  background-size: contain;
-  background-size: cover;
-  object-fit: contain;
-  background-repeat: no-repeat;
-  z-index: -1;
-} */
 
 .wrap-hero {
   display: flex;
@@ -182,7 +171,10 @@ nav {
 
 /* about me */
 #about-me, #portofolio, #skills{
-  margin-block: 50px;
+  padding-block: 50px;
+}
+#about-me{
+  background: linear-gradient(180deg, #FFFFFF, #F2DBDA, #ECCBC8);
 }
 .wrap-about{
     display: flex;
@@ -218,6 +210,10 @@ nav {
 
 
 /* Portofolio */
+
+#portofolio{
+  background: linear-gradient(180deg, #ECCBC8, #D9D9D9);
+}
 .wrap-portofolio{
   display: flex;
   flex-direction: column;
@@ -251,11 +247,14 @@ nav {
   gap: 20px;
   flex-wrap: wrap;
 }
+.btn-porto{
+  margin-top: 10px;
+}
 .btn-porto a{
   padding: 10px;
   background-color: #E9BCB9;
   border-radius: 50px;
-  padding : inline 15px;
+  padding : 10px 20px; 
   color: var(--black);
 
 }
@@ -263,6 +262,13 @@ nav {
 /* end style portofolio */
 
 /* Software Skills */
+
+#skills{
+  background: linear-gradient(180deg, #D9D9D9, #D9D9D9);
+  padding-bottom: 300px;
+  
+}
+
 .wrap-skills h3{
   font-size: 50px;
   color: var(--black);
@@ -314,9 +320,9 @@ nav {
 #contact {
   background: url(/src/images/contact.png) no-repeat center top;
   background-size: cover;
-  padding-top: 100px;
+  padding-top: 200px;
   padding-bottom: 20px;
-  margin-top: 50px; /* Adds more space above the section */
+  margin-top: -250px; 
   
 }
 .wrapp-contact .content-top{

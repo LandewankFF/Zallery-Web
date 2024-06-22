@@ -2,14 +2,6 @@
   .wrap-portofolio .image-porto{
     justify-content: center;
   }
-  /* .hero-right{
-    width: auto;
-    height: auto;
-  }
-  .hero-right img{
-    width: 100%;
-    height: auto;
-  } */
 }
 @media screen and (max-width: 768px) {
   /* hero */
@@ -21,8 +13,9 @@
     align-items: center;
   }
    .hero-right{
-    width: 300px;
+    width: 250px;
     height: auto;
+    padding-bottom: 50px;
   }
   .hero-right img{
     width: 100%;
