@@ -38,4 +38,13 @@
   .wrap-about .content-right {
     width: 242px;
   }
+
+  .wrap-portofolio .list-porto{
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  .wrap-portofolio .image-porto{
+    justify-content: center;
+  }
+
 }

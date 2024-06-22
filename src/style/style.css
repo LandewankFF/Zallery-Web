@@ -206,7 +206,7 @@ nav {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 15px;
+  gap: 20px;
   flex-wrap: wrap;
 }
 .wrap-portofolio h3{
@@ -216,8 +216,11 @@ nav {
   color: #7A231D;
 }
 .wrap-portofolio .list-porto{
-  display: inline-flex;
+  display: flex;
   gap: 50px;
+  justify-content: center;
+  flex-wrap: wrap;
+
 }
 .wrap-portofolio .list-porto a{
   color: var(--black);
@@ -230,6 +233,15 @@ nav {
   justify-content: space-between;
   align-items: center; 
   gap: 20px;
+  flex-wrap: wrap;
+}
+.btn-porto a{
+  padding: 10px;
+  background-color: #E9BCB9;
+  border-radius: 50px;
+  padding : inline 15px;
+  color: var(--black);
+
 }
 
 /* end style portofolio */
