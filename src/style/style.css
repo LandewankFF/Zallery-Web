@@ -200,6 +200,40 @@ nav {
     text-align: center;
 }
 
+
+/* Portofolio */
+.wrap-portofolio{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+.wrap-portofolio h3{
+  font-family: "Roboto", sans-serif;
+  font-size: 60px;
+  text-align: center;
+  color: #7A231D;
+}
+.wrap-portofolio .list-porto{
+  display: inline-flex;
+  gap: 50px;
+}
+.wrap-portofolio .list-porto a{
+  color: var(--black);
+}
+.wrap-portofolio .list-porto .active{
+  font-weight: bold;
+}
+.wrap-portofolio .image-porto{
+  display: flex;
+  justify-content: space-between;
+  align-items: center; 
+  gap: 20px;
+}
+
+/* end style portofolio */
+
 /* Footer style */
 footer {
   background-color: var(--abu);
