@@ -108,3 +108,14 @@
     font-size: 20px;
   }
 }
+
+@media screen and (max-width: 320px){
+  .container{
+    padding-inline:20px;
+  }
+  .wrap-portofolio .image-porto img{
+    width: 100%;
+    height: auto;
+  }
+
+}
