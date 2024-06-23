@@ -1,0 +1,58 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#hero{
+    background: url(/src/images/hero.svg) no-repeat center top;
+    background-size: cover;
+    padding-bottom: 150px;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+}
+.container {
+    max-width: 1440px;
+    margin-inline: auto;
+    padding-inline: 95px;
+}
+.wrap-hero {
+    display: flex;
+    justify-content: space-between;
+    padding-block: 50px;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+.hero-left {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+  
+.hero-left span {
+    font-size: 40px;
+    font-family: "Autour One", system-ui;
+    color: var(--light);
+}
+.hero-left h3 {
+    font-size: 50px;
+    color: var(--primary);
+  }
+  .hero-left .skill {
+    background-color: var(--primary);
+    font-size: 24px;
+    padding: 10px;
+    color: var(--light);
+    width: fit-content;
+  }
+  .hero-right{
+    width: 462px;
+    height: auto;
+  }
+  .hero-right img{
+    width: 100%;
+    height: auto;
+  }

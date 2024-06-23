@@ -122,11 +122,9 @@ nav {
 
 /* Hero */
 #hero {
-  /* background: url(/src/images/Vector.png);
-  background-repeat: no-repeat;
-  background-size: cover; */
-  background: url(/src/images/Vector.png) no-repeat center top;
+  background: url(/src/images/hero.svg) no-repeat center top;
   background-size: cover;
+  padding-bottom: 125px;
   
 }
 
@@ -165,8 +163,8 @@ nav {
   width: fit-content;
 }
 .hero-right{
-  width: 300px;
-  height: 300px;
+  width: 462px;
+  height: auto;
 }
 .hero-right img{
   width: 100%;
